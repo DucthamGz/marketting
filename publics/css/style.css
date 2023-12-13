@@ -23,12 +23,18 @@ p{
     line-height: 1.6;
 }
 
+
+@media (max-width:568px){
+    .container{
+        padding: 0px 15px !important;
+    }
+}
 .vietstar{
-    background-image: url("../images/Tab_One.png");
     background-size: cover;
-    background-position: center center;
+    background-position: top center;
     background-attachment: scroll;
     background-repeat: no-repeat;
+    background-image: url("../images/background.png");
 }
 
 /* HEADER START */
@@ -309,7 +315,7 @@ p{
     margin-right: 10px;
 }
 
-.desc-content .button-start{
+.button-start{
     margin-top: 40px;
     padding: 15px 40px;
     margin-left: 0;
@@ -328,11 +334,11 @@ p{
         font-size: 3.2em;
     }
 
-    .desc-content .button-start{
+    .button-start{
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 60px;
-        font-size: 15px;
+        font-size: 13.5px;
     }
 }
 
@@ -341,7 +347,137 @@ p{
         font-size: 2em;
     }
 
-    .desc-content .button-start{
-        font-size: 12px;
+}
+
+/* TAB TWO START */
+
+.tab-two .container{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 150px 0;
+}
+
+.tab-two .container .item-advan{
+    width: 22.5%;
+    box-shadow: 0px 0px 7px gainsboro;
+    padding: 35px 15px;
+    border-radius: 10px;
+    text-align: center;
+    background-image: url("../images/color.png");
+    background-position: center center;
+    font-weight: 700;
+    color: #1B004F;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.tab-two .container .item-advan.top-center{
+    background-position: top center;
+}
+
+.tab-two .container .item-advan.left-center{
+    background-position: right center;
+}
+
+.tab-two .container .item-advan.bottom-center{
+    background-position: right bottom;
+}
+
+.tab-two .container .item-advan:hover{
+    transition: 0.5s ease-in-out;
+    transform: scale(1.007);
+    box-shadow: 0px 3px 15px  rgba(128, 128, 128, 0.479);
+}
+
+@media (max-width: 769px) {
+        
+    .tab-two .container .item-advan{
+        width: 48%;
+        margin: 15px 0;
     }
+}
+
+/* TAB THREE START */
+.title-tab{
+    color: #1B004F;
+    border-bottom: 1px solid #1B004F;
+}
+.title-tab h3{
+    font-weight: 700;
+    color: #1B004F;
+}
+
+.tab-three{
+    padding: 55px 0;
+}
+
+.tab-three .step{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 25px 0;
+    margin: 25px auto;
+}
+
+.tab-three .step .item-step{
+    border: 2px solid white;
+    border-radius: 1000px;
+    width: 15%;
+    box-shadow: 0px 0px 7px gainsboro;
+    padding: 15px;
+    background-color: rgba(220, 220, 220, 0.2);
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.tab-three .step .item-step:hover{
+    transition: 0.5s ease-in-out;
+    transform: scale(1.007);
+    box-shadow: 0px 3px 15px  rgba(128, 128, 128, 0.479);
+}
+
+.tab-three .step .number-step{
+    width: 100%;
+}
+
+.tab-three .content-step{
+    padding: 4vw 0;
+    color: #1B004F;
+    font-weight: 700;
+    text-align: center;
+}
+
+.description{
+    margin: 25px auto;
+    text-align: center;
+    width: 50%;
+}
+
+.description h3{
+    font-weight: 700;
+    color: #1B004F;
+}
+
+.tab-three .description .button-start{
+    margin: 15px auto;
+}
+
+@media (max-width: 767px) {
+    .tab-three .step .item-step{
+        width: 30%;
+        margin-bottom: 15px;
+    }
+
+    .tab-three .content-step{
+        font-size: 15px;
+    }
+        
+    .description{
+        width: 100%;
+    }
+
+    
 }
