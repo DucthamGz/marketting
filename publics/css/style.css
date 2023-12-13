@@ -332,11 +332,16 @@ p{
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 60px;
+        font-size: 15px;
     }
 }
 
 @media (max-width: 767px) {
     .content-tab-one h1.title-tab{
         font-size: 2em;
+    }
+
+    .desc-content .button-start{
+        font-size: 12px;
     }
 }
